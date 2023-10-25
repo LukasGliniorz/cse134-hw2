@@ -30,6 +30,40 @@
         <hr>
         <section>
             <h2>Contact form</h2>
+            <form action="submit.php" method="post">
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <br>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Message</legend>
+                    <textarea id="message" name ="message" rows="5" cols="30" required></textarea>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="Job offer">Job offer</option>
+                        <option value="Question">Question</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <label for="interest">Interest:</label>
+                    <datalist id="interest">
+                        <option value="TUM">TUM</option>
+                        <option value="Aston University"></option>
+                    </datalist>
+                </fieldset>
+            </form>
         </section>
 
     </main>
