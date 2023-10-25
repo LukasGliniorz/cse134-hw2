@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/homepage.html">Home</a></li>
                 <li><a href="/downloads.html">Downloads</a></li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li><a href="/experiments.html">Experiments</a></li>
@@ -62,13 +62,26 @@
                         <option value="TUM">TUM</option>
                         <option value="Aston University"></option>
                     </datalist>
+                    <input type="text" id="other" name="other" list="interest">
                 </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Privacy Settings</legend>
+                    <details>
+                        <summary>Privacy Policy</summary>
+                        The given information will only be stored to contact you.
+                    </details>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the Privacy Policy</label>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
             </form>
         </section>
 
     </main>
     <footer>
-
+        <p>Made by Lukas Gliniorz, 2023</p>
     </footer>
 
 </body>
